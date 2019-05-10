@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 100px auto auto auto;
+    width: 300px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.start, .text, .today {
+    height: 50px;
+    line-height: 50px;
+}
+
+.text {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.coding {
+    background-color: #d37e0e;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%);
+    animation: slideDown 0.8s infinite;
+}
+
+@keyframes slideDown {
+    0% {top: -20px; opacity: 0;}
+    25% {top: 0px; opacity: 1;}
+    50% {top: 0px; opacity: 0;}
+    75% {top: 0px; opacity: 0;}
+    100% {top: 0px; opacity: 0;}
+}
+
+.tearching {
+    background-color: #661275;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: slideUp 0.8s infinite;
+}
+
+@keyframes slideUp {
+    0% {top: 0px; opacity: 0;}
+    25% {top: 0px; opacity: 0;}
+    50% {top: 15px; opacity: 0;}
+    75% {top: 0px; opacity: 1;}
+    100% {top: 0px; opacity: 0;}
+}
+
+.learning {
+    background-color: #31a10f;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%);
+    animation: appear 0.8s infinite;
+}
+
+@keyframes appear {
+    0% {top: 0px; opacity: 0;}
+    25% {top: 0px; opacity: 0;}
+    50% {top: 0px; opacity: 0;}
+    75% {top: 0px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
