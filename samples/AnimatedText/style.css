@@ -28,7 +28,7 @@
     display: inline;
     position: absolute;
     left: 50%;
-    transform: translate( -50%);
+    transform: translate(-50%);
     animation: slideDown 0.8s infinite;
 }
 
@@ -62,7 +62,7 @@
     display: inline;
     position: absolute;
     left: 50%;
-    transform: translate( -50%);
+    transform: translate(-50%);
     animation: appear 0.8s infinite;
 }
 

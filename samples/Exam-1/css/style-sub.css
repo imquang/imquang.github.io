@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0;
+    padding: 0 30px;
+}
+
+.gallery {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+}
