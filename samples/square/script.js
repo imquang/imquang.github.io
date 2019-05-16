@@ -1,4 +1,4 @@
-// Hàm cộng hai số
+// Hàm
 function square(a)
 {
     return a*a;
@@ -7,7 +7,7 @@ function square(a)
 // Lấy thông tin từ người dùng
 var a = parseInt(prompt("Nhập số a"));
  
-// Tính tổng
+// Tính bình phương
 var binhPhuong = square(a);
  
 // In ra màn hình

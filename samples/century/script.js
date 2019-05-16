@@ -1,4 +1,4 @@
-// Hàm cộng hai số
+// Hàm
 function century(a)
 {
     return Math.ceil(a/100);
@@ -7,7 +7,7 @@ function century(a)
 // Lấy thông tin từ người dùng
 var a = parseInt(prompt("Nhập năm a"));
  
-// Tính tổng
+// Tính
 var theKy = century(a);
  
 // In ra màn hình
