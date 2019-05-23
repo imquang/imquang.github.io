@@ -7,6 +7,36 @@
     <title>Demo Javascript</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script>
+        //Khai bao số thứ 1
+        var num1;
+        //Nhập số vào
+        num1 = prompt("Nhập vào số thứ nhất");
+        //Kiểm tra là number không?
+        if(typeof num1 == "number") {
+            document.write(num1 + " là kiểu số <br/>");
+        }
+        else{
+            document.write(num1 + " không phải là kiểu số <br/>");
+        }
+        //Khai báo số thứ 2
+        var num2;
+        //Nhập vào số thứ 2
+        num2 = prompt("Nhập vào số thứ 2");
+        //Kiểm tra là number không?
+        if(typeof num2 == "number") {
+            document.write(num2 + " is a number <br/>");
+        }
+        else{
+            document.write(num2 + " không phải là kiểu số <br/>");
+        }
+        //So sánh 2 số và in ra màn hình kết quả
+        if (num1 > num2) {
+            document.write("Số lớn nhất trong hai số là: " + num1);
+        }
+        else if (num1 < num2){
+        document.write("Số lớn nhất trong hai số là: " + num2);
+        }
+    </script>
 </body>
 </html>
