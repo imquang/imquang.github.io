@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tập rẽ nhánh phần 2</title>
+</head>
+<body>
+    <script>
+        function bai1() {
+            var now = new Date();   // Lấy thời gian hiện tại
+            var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
+            var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+            var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại
+            var mua;
+            if (month <= 3) {
+                mua = "Mùa Xuân";
+            } else if (month > 3 && month <= 6) {
+                mua = "Mùa Hè";
+            } else if (month > 6 && month <= 9) {
+                mua = "Mùa Thu";
+            } else {
+                mua = "Mùa Đông";
+            }
+            document.write(date + "/" + month + "/" + year + " - " + "Hiện tại đang là mùa " + mua);
+        }
+
+        function bai2(x) {
+            var x;
+            var y;
+            if (x < 4) {
+                y = "Điểm F"
+            } else if (x >= 4 && x < 5) {
+                y = "Điểm D"
+            } else if (x >= 5 && x < 7) {
+                y = "Điểm C"
+            } else if (x >= 7 && x < 8.5) {
+                y = "Điểm B"
+            } else {
+                y = "Điểm A"
+            }
+            document.write("Điểm của sinh viên là: " + y);
+        }
+
+        function translate(x) {
+            var x;
+            switch (x) {
+                case "Eng":
+                    document.write("Hello");
+                    break;
+                case "Tha":
+                    document.write("สวัสดี");
+                    break;
+                case "Ger":
+                    document.write("Hallo")
+                    break;
+                case "Rus":
+                    document.write("привет")
+                    break;
+                case "Ita":
+                    document.write("Ciao")
+                    break;
+                default:
+                    document.write("Xin chào")
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

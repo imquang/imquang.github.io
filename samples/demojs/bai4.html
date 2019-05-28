@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bai4(user) {
+            if (user.username !== "" &&
+            user.username.length <= 20 &&
+            user.password.length >= 6 &&
+            user.password === user.confirm
+        ) {
+            return "Pass"
+        }
+        return "Fail";
+        }
+        let user = {
+            username: "Quang",
+            password: "khongbiet",
+            confirm: "khongbiet"
+        };
+    </script>
+</body>
+</html>
