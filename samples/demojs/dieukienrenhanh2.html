@@ -13,17 +13,17 @@
             var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
             var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
             var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại
-            var mua;
-            if (month <= 3) {
-                mua = "Mùa Xuân";
-            } else if (month > 3 && month <= 6) {
-                mua = "Mùa Hè";
-            } else if (month > 6 && month <= 9) {
-                mua = "Mùa Thu";
+            var season;
+            if (month >= 9) {
+                season = "Mùa Đông";
+            } else if (month >= 6) {
+                season = "Mùa Thu";
+            } else if (month >= 3) {
+                season = "Mùa Hè";
             } else {
-                mua = "Mùa Đông";
+                season = "Mùa Xuân";
             }
-            document.write(date + "/" + month + "/" + year + " - " + "Hiện tại đang là mùa " + mua);
+            document.write(date + "/" + month + "/" + year + " - " + "Hiện tại đang là mùa " + season);
         }
 
         function bai2(x) {
@@ -66,6 +66,44 @@
                     break;
             }
         }
+
+        function findPosition(arr) {
+            var i;
+            for (i = 0; i < arr.length; i++) {
+                if(arr[i] == true) {
+                    document.write("Vị trí thứ: " + i + "của mảng");
+                }
+            }
+        }
+
+        function vd1(n) {
+            let i;
+            for (i = 0; i <= n; i++) {
+                if (i % 15 === 0) {
+                    document.write('<p style = "color:red">' + i + '</p>');
+                } else if (i % 3 === 0) {
+                    document.write('<p style = "color:green">' + i + '</p>');
+                } else if (i % 5 === 0) {
+                    document.write('<p style = "color:blue">' + i + '</p>');
+                } else {
+                    document.write('<p style = "color:orange">' + i + '</p>');
+                }
+            }
+        }
+
+        function printSquare(n) {
+            var str = '';
+            for (var i = 0; i < n; i++) {
+            for (var j = 0; j < n; j++) {
+            // In ra n dấu *
+            str += ' * ';
+            }
+            // In ra dấu xuống dòng
+            str += '<br/>';
+            }
+            return str;
+        }
+
     </script>
 </body>
 </html>
