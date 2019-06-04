@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    text-indent: 1.5em;
+}
+
+body {
+    padding: 0 50px 0 50px;
+}
+
+.header {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.container > div {
+    padding-bottom: 20px;
+}
+
+#gioithieu {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+img {
+    max-width: 400px;
+    height: auto;
+}
+
+#gioithieu > p {
+    padding-left: 15px;
+}
