@@ -1,8 +1,8 @@
 //Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
 function changeColor() {
-    document.getElementById("gioithieu").style.color = "blue";
-    document.getElementById("dialy").style.color = "yellow";
-    document.getElementById("dulich").style.color = "red";
+    document.getElementById("gioithieu").style.color = 'blue';
+    document.getElementById("dialy").style.color = 'yellow';
+    document.getElementById("dulich").style.color = 'red';
 }
 
 //Thay đổi màu nền của trang thành màu color.
@@ -18,7 +18,7 @@ function copyContent(paragraph1, paragraph2) {
 
 //Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên).
 function changeFontSize(x) {
-    document.getElementsByClassName("container")[0].style.fontSize = x;
+    document.getElementsByClassName("container")[0].style.fontSize = x + 'px';
 }
 
 //Tăng kích thước font chữ của đoạn văn mong muốn (paragraph, tham số truyền vào có thể là id đoạn văn) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels
