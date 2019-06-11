@@ -1,8 +1,7 @@
 //Bài 1: Viết hàm chuyển đổi nhiệt độ từ độ C sang độ F, tham số truyền vào là 1 số nguyên biểu thị độ C
-function bai1() {
-    cTemp = prompt("Nhập vào độ \xB0C:");
+function bai1(cTemp) {
     var cToFahr = cTemp * 9 / 5 + 32;
-    var message = cTemp + " \xB0C" + " bằng " + cToFahr + " \xB0F.";
+    var message = cTemp + "\xB0C" + " bằng " + cToFahr + "\xB0F.";
     return (message);
 }
 
@@ -13,9 +12,10 @@ function bai2(dataArray) {
 }
 
 //Bài 3: Cho 1 mảng các chuỗi bất kỳ. Hãy viết hàm tìm ra chuỗi có độ dài lớn nhất trong mảng.
-function findLongestWord(dataArray) {
+function bai3(dataArray) {
     var words = dataArray.split(' ');
     var maxLength = 0;
+    var maxWodsLength;
     for (var i = 0; i < words.length; i++) {
         if (words[i].length > maxLength) {
             maxWodsLength = words[i];
