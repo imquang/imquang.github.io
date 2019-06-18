@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+    background-color: #0e0e0e;
+}
+
 .main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(#009FFF, #db36a4)
+    background-image: linear-gradient(to left top, #ff0091, #e941b3, #cb60cc, #aa75da, #8b85de, #6c98ee, #46a9f7, #00b9fa, #00d5fc, #00ebd4, #00fa8c, #b3ff23);
 }
 
 .button {
@@ -21,6 +26,10 @@
     border: none;
     background: #181818;
     color: #ffffff;
+}
+
+.button:hover {
+    background: #0e0e0e;
 }
 
 .textview {
