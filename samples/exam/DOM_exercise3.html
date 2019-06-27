@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Books List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            height: 300px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Books List</h1>
+    <div class="container" id="books">
+        <div class="grid">
+            <div>Chuyện linh Tây Nam</div>
+            <div>Nam Cao</div>
+            <div><img src="https://bizweb.dktcdn.net/100/197/269/products/chuyen-linh-tay-nam.jpg?v=1552969502527"
+                    alt="Chí Phèo">
+            </div>
+        </div>
+    </div>
+    <script>
+        let books = [
+            {
+                title: 'The Design of EveryDay Things',
+                author: 'Don Norman',
+                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+                alreadyRead: false
+            },
+            {
+                title: 'The Most Human Human',
+                author: 'Brian Christian',
+                thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+                alreadyRead: true
+            },
+            {
+                title: 'My Book in 15 Seconds - The Night Is Deep',
+                author: 'Joe Hart',
+                thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+                alreadyRead: false
+            },
+            {
+                title: 'The Most Human Human 2',
+                author: 'Brian Christian',
+                thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+                alreadyRead: false
+            },
+        ];
+
+        function render() {
+            for (let i = 0; i < books.length; i++) {
+                document.getElementsByClassName("grid")[1].getElementsByTagName("div")[1].innerHTML;
+            }
+        }
+    </script>
+</body>
+
+</html>
