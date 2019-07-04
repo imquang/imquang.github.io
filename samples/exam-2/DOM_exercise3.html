@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>make element</title>
+</head>
+
+<body>
+    <h1>make element</h1>
+    <script>
+        function makeElement(tag, text) {
+            var tg = document.createElement(tag);
+            var tx = document.createTextNode(text);
+            tg.appendChild(tx);
+            document.body.appendChild(tg);
+            document.body.style.color = 'red';
+            document.body.style.fontFamily = 'sans-serif';
+        }
+        makeElement('h2', 'đây là thẻ h2')
+        makeElement('p', 'đây là một đoạn văn bản ngắn')
+        makeElement('a', 'đây là một link')
+        makeElement('button', 'click me!')
+        
+    </script>
+</body>
+
+</html>

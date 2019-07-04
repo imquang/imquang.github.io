@@ -1,34 +1,109 @@
-function sortTable() {
-    var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("myTable");
-    switching = true;
-    /*Make a loop that will continue until
-    no switching has been done:*/
-    while (switching) {
-      //start by saying: no switching is done:
-      switching = false;
-      rows = table.rows;
-      /*Loop through all table rows (except the
-      first, which contains table headers):*/
-      for (i = 1; i < (rows.length - 1); i++) {
-        //start by saying there should be no switching:
-        shouldSwitch = false;
-        /*Get the two elements you want to compare,
-        one from current row and one from the next:*/
-        x = rows[i].getElementsByTagName("TD")[0];
-        y = rows[i + 1].getElementsByTagName("TD")[0];
-        //check if the two rows should switch place:
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        /*If a switch has been marked, make the switch
-        and mark that a switch has been done:*/
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-      }
-    }
+let products = [
+  {
+    th: 'nokia105.jpg',
+    name: 'Điện thoại Nokia 105 Single Sim (2017)',
+    id: 'MS001',
+    price: 327000,
+    quantity: 1
+  },
+  {
+    th: 'nokia8110.jpg',
+    name: 'Điện thoại Nokia 8110 4G	',
+    id: 'MS002',
+    price: 660000,
+    quantity: 3
+  },
+  {
+    th: 'nokia106.jpg',
+    name: 'Điện thoại Nokia 106 Dual Sim	',
+    id: 'MS003',
+    price: 368000,
+    quantity: 2
+  },
+  {
+    th: 'nokia150.jpg',
+    name: 'Điện thoại Nokia 150 Dual Sim',
+    id: 'MS004',
+    price: 589000,
+    quantity: 4
+  },
+  {
+    th: 'nokia3310.jpg',
+    name: 'Điện thoại Nokia 3310 Dual Sim	',
+    id: 'MS005',
+    price: 890000,
+    quantity: 5
   }
+];
+
+function sumPrice() {
+  let sum = 0;
+  for (let i = 0; i < products.length; i++) {
+    sum += products[i].price * products[i].quantity;
+  }
+  return sum;
+}
+
+function renderContent() {
+  let content = '';
+  for (let i = 0; i < products.length; i++) {
+    content += `<tbody>
+      <tr class="_ro">
+        <td class="_im"><img src="images/${products[i].th}"></td>
+        <td class="_na">${products[i].name}</td>
+        <td class="_ms">${products[i].id}</td>
+        <td class="_co">${products[i].price}</td>
+        <td class="_sl">${products[i].quantity}</td>
+      </tr>
+    </tbody>`
+  }
+  document.getElementsByClassName('detail')[0].innerHTML = content;
+}
+
+function sortColumn(thElement) {
+  thElement = $(thElement);
+  const column = thElement.attr('data-column');
+  if (thElement.attr('data-order') === 'asc') {
+    thElement.attr('data-order', 'desc');
+    thElement.children().addClass('fa-sort-up').removeClass('fa-sort-down');
+    sortAz(column);
+  } else {
+    thElement.attr('data-order', 'asc');
+    thElement.children().addClass('fa-sort-down').removeClass('fa-sort-up');
+    sortZa(column);
+  }
+  renderContent()
+}
+
+function sortAz(column) {
+  products.sort(function (a, b) {
+    let x = a[column];
+    let y = b[column];
+
+    if (typeof x == 'string') x = x.toLocaleLowerCase()
+    if (typeof y == 'string') y = y.toLocaleLowerCase()
+
+    if (x < y) return -1;
+    if (x > y) return 1;
+
+    return 0;
+  })
+}
+
+function sortZa(column) {
+  products.sort(function (a, b) {
+    let x = a[column];
+    let y = b[column];
+
+    if (typeof x == 'string') x = x.toLocaleLowerCase()
+    if (typeof y == 'string') y = y.toLocaleLowerCase()
+
+    if (x < y) return 1;
+    if (x > y) return -1;
+
+    return 0;
+  })
+}
+
+renderContent();
+$('#_va').text(sumPrice());

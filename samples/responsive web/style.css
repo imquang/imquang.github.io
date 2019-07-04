@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #2c5e92 0%, #552f6d 80%);
+}
+
+._title {
+  height: 50px;
+}
+
+._tit {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.row {
+  padding: 5px;
+}
+
+.img-fluid {
+  opacity: 0.8;
+}
+
+.img-fluid:hover {
+  opacity: 1;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  ._title {
+    height: 100px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 65px;
+    font-weight: 900;
+  }
+
+  ._title {
+    height: 150px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 70px;
+    font-weight: 900;
+  }
+
+  ._title {
+    height: 200px;
+  }
+}

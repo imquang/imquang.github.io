@@ -4,9 +4,9 @@
 }
 
 body {
-    padding-top: 20px;
-    font-family: sans-serif;
-    font-size: 14px;
+  padding-top: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 table, th, td {
@@ -16,31 +16,34 @@ table, th, td {
 }
 
 img {
-    max-width: 100px;
-    height: auto;
+  max-width: 100px;
+  height: auto;
 }
 
 .header {
-    padding: 10px;
+  padding: 10px;
 }
 
 h1 {
-    padding: 10px 0;
-    text-align: center;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.container {
-    position: absolute;
-    position: absolute;
-    
-    left: 50%;
-    transform: translate(-50%);
+table {
+  margin: auto;
+  max-width: 900px;
 }
 
 ._sl, ._co, ._ms {
-    text-align: center;
+  text-align: center;
 }
 
-._co:hover, ._ms:hover, ._sl:hover, ._ti:hover {
-    color: blue;
+._ro:hover {
+  color: #142a96;
+}
+
+._su {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Format SĐT</title>
+</head>
+
+<body>
+    <h1>Format SĐT</h1>
+    <script>
+        let data = [
+            '0945405667',
+            '0399563926',
+            '0362455817',
+            '0862283944',
+            '0329861893',
+            '0328542436',
+            '0335798445',
+            '0862729041',
+            '0862747205',
+            '0332018483'
+        ]
+
+        function formatPhoneNumber(phone) {
+            x1 = phone.slice(0, 3);
+            x2 = phone.slice(3, 6);
+            x3 = phone.slice(6);
+            phone = x1 + " " + x2 + " " + x3;
+            return phone
+        }
+
+        function main() {
+            data.forEach(phone => {
+                document.writeln(`${formatPhoneNumber(phone)} <br/>`)
+            });
+        }
+        main()
+    </script>
+</body>
+
+</html>

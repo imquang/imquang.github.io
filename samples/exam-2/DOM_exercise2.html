@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Thay đổi style</title>
+</head>
+
+<body>
+    <p id='text'>javascript test - techmaster</p>
+    <div>
+        <button id="changeStyle" onclick="changeStyle()">Change Style</button>
+        <script>
+            function changeStyle() {
+                document.getElementById('text').style.fontFamily = 'Arial, sans-serif';
+                document.getElementById('text').style.fontSize = '16px';
+                document.getElementById('text').style.color = 'blue';
+                document.getElementById('text').style.textTransform = 'capitalize';
+            }
+        </script>
+    </div>
+</body>
+
+</html>
