@@ -1,40 +1,13 @@
-let products = [
-  {
-    th: 'nokia105.jpg',
-    name: 'Điện thoại Nokia 105 Single Sim (2017)',
-    id: 'MS001',
-    price: 327000,
-    quantity: 1
-  },
-  {
-    th: 'nokia8110.jpg',
-    name: 'Điện thoại Nokia 8110 4G	',
-    id: 'MS002',
-    price: 660000,
-    quantity: 3
-  },
-  {
-    th: 'nokia106.jpg',
-    name: 'Điện thoại Nokia 106 Dual Sim	',
-    id: 'MS003',
-    price: 368000,
-    quantity: 2
-  },
-  {
-    th: 'nokia150.jpg',
-    name: 'Điện thoại Nokia 150 Dual Sim',
-    id: 'MS004',
-    price: 589000,
-    quantity: 4
-  },
-  {
-    th: 'nokia3310.jpg',
-    name: 'Điện thoại Nokia 3310 Dual Sim	',
-    id: 'MS005',
-    price: 890000,
-    quantity: 5
-  }
-];
+let products = [];
+
+$.ajax({
+  url: 'data.json',
+  type: 'get',
+  dataType: 'json'
+}).done(function (data) {
+  products = data;
+  renderContent();
+})
 
 function sumPrice() {
   let sum = 0;
@@ -63,6 +36,9 @@ function renderContent() {
 function sortColumn(thElement) {
   thElement = $(thElement);
   const column = thElement.attr('data-column');
+
+  $('i.fas').attr('class', 'fas fa-sort');
+
   if (thElement.attr('data-order') === 'asc') {
     thElement.attr('data-order', 'desc');
     thElement.children().addClass('fa-sort-up').removeClass('fa-sort-down');
