@@ -1,0 +1,163 @@
+body {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.bg-light {
+    background: #ffffff!important;
+}
+
+.container {
+    max-width: 1062px;
+}
+
+.navbar {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-brand {
+    font-family: 'Inconsolata';
+    text-transform: uppercase;
+    color: #000000!important;
+}
+
+.nav-item {
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-link {
+    
+    color: #626262!important;
+}
+
+.typo {
+    margin: auto;
+    max-width: 900px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.header-link-3 {
+    margin-bottom: 136px;
+}
+
+.col .img-fluid {
+    margin: 0;
+}
+
+.imageH3 {
+    padding-bottom: 33px;
+}
+
+@media (min-width: 1200px) {
+    header {
+        margin-top: 54px;
+    }
+
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+    
+    .nav-item {
+        margin-left: 80px;
+        font-size: 14px;
+    }
+
+    .nav-link {
+        padding-right: 0px!important;
+    }
+
+    .img-fluid {
+        margin-top: 71px;
+        margin-bottom: 100px;
+    }
+
+    .header--link {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        color: #b4ad9e;
+        font-weight: lighter;
+    }
+
+    .title {
+        margin-bottom: 34px;
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+    }
+
+    .detail {
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .header-link {
+        margin-bottom: 52px;
+    }
+    
+    .header-link-2 {
+        margin-bottom: 136px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        margin-top: 54px;
+    }
+
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+    
+    .nav-item {
+        margin-left: 80px;
+        font-size: 14px;
+    }
+
+    .nav-link {
+        padding-right: 0px!important;
+    }
+
+    .img-fluid {
+        margin-top: 71px;
+        margin-bottom: 100px;
+    }
+
+    .header--link {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        color: #b4ad9e;
+        font-weight: lighter;
+    }
+
+    .title {
+        margin-bottom: 34px;
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+    }
+
+    .detail {
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .header-link {
+        margin-bottom: 52px;
+    }
+    
+    .header-link-2 {
+        margin-bottom: 136px;
+    }
+}
