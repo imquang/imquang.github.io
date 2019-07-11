@@ -86,6 +86,10 @@ p {
         font-weight: lighter;
     }
 
+    .header--link-1 {
+        padding-bottom: 30px;
+    }
+
     .title {
         margin-bottom: 34px;
         font-family: 'Playfair Display', serif;
@@ -139,6 +143,10 @@ p {
         font-size: 14px;
         color: #b4ad9e;
         font-weight: lighter;
+    }
+
+    .header--link-1 {
+        padding-bottom: 30px;
     }
 
     .title {
