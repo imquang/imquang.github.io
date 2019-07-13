@@ -69,6 +69,14 @@
     margin-bottom: 50px;
 }
 
+.imgMain {
+    opacity: 0.9;
+}
+
+.imgMain:hover {
+    opacity: 1;
+}
+
 .img-col {
     max-width: 390px;
 }
