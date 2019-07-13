@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('font/BebasNeue_Regular.otf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('font/BebasNeue_Bold.otf');
+}
+
+.navigation {
+    margin: auto;
+    padding: 0 10px;
+    background: #7CB342;
+}
+
+.navbar, .aboutUs, .row-about {
+    max-width: 1222px;
+    padding: 0;
+}
+
+
+.sa {
+    margin-left: 51px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.navbar-nav {
+    height: 60px;
+    width: 550px;
+    background: #ffffff;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.nav-link- {
+    padding: 0 15px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #313131;
+}
+
+.nav-link-:hover {
+    text-decoration: none;
+    color: #7CB342;
+}
+
+.nav-link-:active {
+    color: #7CB342;
+}
+
+.active > .nav-link- {
+    color: #7CB342;
+}
+
+.mainImages {
+    margin-bottom: 50px;
+}
+
+.img-col {
+    max-width: 390px;
+}
+
+.aboutUs {
+    margin-bottom: 149px;
+    height: 400px;
+}
+
+.row-about {
+    margin: auto;
+}
+
+.detail-1 {
+    margin: 61px 0;
+    width: 640px;
+}
+
+.formDonate {
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.detail-1 h4 {
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #050D31;
+}
+
+.detail-1 h2 {
+    margin-bottom: 20.2px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.hightlight-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #7CB342;
+}
+
+.detail-1 p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    color: #313131;
+}
+
+.form-input {
+    width: 300px;
+}
+
+input, button {
+    width: 100%
+}
+
+.titleForm {
+    height: 84px;
+    width: 300px;
+    margin-bottom: 15px;
+    background: #7CB342;
+}
+
+.titleForm h1 {
+    margin: 0;
+    padding: 11px 0 0 0;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+
+.form-input {
+    padding: 0 30px;
+}
+
+.form-input > p {
+    margin: 0;
+    padding-bottom: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #313131;
+}
+
+.form-input p span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #388E3C;
+}
+
+input {
+    margin: 5px 0;
+    padding: 0 15px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input:active, input:focus {
+    border: 2px solid #7CB342;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #313131;
+}
+
+.btn {
+    border-radius: 2px;
+    outline: none;
+    height: 40px;
+    background: #7CB342;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.img-f {
+    float: right;
+}
+
+.detail-2 {
+    max-width: 640px;
+    float: right;
+}
+
+.detail-2 h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 2.5px;
+    color: #050D31;
+}
+
+.detail-2 h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #023753;
+}
+
+.detail-2 h2 span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #7CB342;
+}
+
+
+.detail-2 p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: right;
+    color: #313131;    
+}
+
+.ourMission {
+    margin-bottom: 150px;
+}
+
+.list-group-item, .card {
+    border: none;
+}
+
+.detail-3 h4 {
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #050D31;
+}
+
+.detail-3 h2 {
+    margin-bottom: 20.2px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.detail-3 p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    color: #313131;
+}
+
+.ourActivities {
+    margin-bottom: 150px;
+}
+
+.volunteer {
+    margin-bottom: 150px;
+}
+
+.feebBack {
+    margin-bottom: 150px;
+}
+
+.fas {
+    padding-right: 10px;
+    color: #7CB342;
+}
+
+.btnCustom {
+    height: 46px;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #023753;
+}
+
+
+.btnCustom:focus {
+    outline: none;
+    border: 1px solid #7CB342;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #023753;
+}
+
+.collapse {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #023753; 
+}
+
+.card-box {
+    height: 280px;
+    background: #FFFFFF;
+    box-shadow: -5px 9px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 2px;
+}
+
+.box-5 {
+    padding-top: 39px;
+    padding-left: 34px;
+}
+
+footer {
+    height: 60px;
+    background: #7CB342;
+}
+
+.copyR {
+    padding-top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.row h3 {
+    margin: auto;
+    max-width: 870px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 58px;
+    color: #023753;
+}
+
+.fe1 {
+    margin-bottom: 60px;
+}
