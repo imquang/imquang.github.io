@@ -212,7 +212,7 @@ input {
 input::placeholder {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 19px;
     color: #D2D2D2;
@@ -429,5 +429,11 @@ footer {
 }
 
 .fe1 {
+    margin: auto;
     margin-bottom: 60px;
+    max-width: 870px;
+}
+
+.fe2-1 {
+    margin: auto;
 }
