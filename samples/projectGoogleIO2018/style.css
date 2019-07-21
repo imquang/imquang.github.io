@@ -1,127 +1,524 @@
-.container {
-    max-width: 1200px;
-}
-
-header {
-    margin-top: 22px;
-    margin-bottom: 182px;
-}
-
-.navbar-brand {
-    padding-right: 35px;
-}
-
-.nav-item {
-    padding-right: 20px;
-}
-
 .nav-link {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    color: #212124!important; 
-}
-
-.sign-in {
-    padding-right: 0;
-}
-
-.tag-line {
-    margin-bottom: 255px;
-}
-
-.timeline {
-    margin-bottom: 126px;
-}
-
-.banner {
-    position: relative;
-    margin-bottom: 176px;
-}
-
-.spe {
-    width: 100%;
-}
-
-.banner .weather-card {
-    position: absolute;
-    left: 64%;
-    top: 5%;
-}
-
-.io-card {
-    max-width: 1100px;
-    max-height: 340px;
-    background: #4768FD;
-}
-
-.box {
-    max-width: 900px;
-    margin: auto;
-    padding: 25px;
-}
-
-.box h3 {
-    margin: 0;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    color: #FFFFFF;   
-}
-
-.row-1- {
-    margin-bottom: 112px;
-}
-
-.title img, .title h4 {
-    display: inline;
-}
-
-.img-title {
-    padding-right: 23px;
-}
-
-.title {
-    padding-top: 15px;
-    padding-bottom: 37px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -0.1px;
     color: #212124;
 }
 
-.detail {
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 36px;
-    letter-spacing: -0.4px;
-    color: #212124;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background: #FFFFFF;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    header {
+        padding-top: 1.375rem;
+        margin-bottom: 11.375rem;
+    }
+
+    .main-menu {
+        max-width: 99.125rem;
+        height: 2.5625rem;
+    }
+
+    .tagline {
+        margin-bottom: 10rem;
+    }
+
+    .timeline {
+        margin-bottom: 7rem;
+    }
+
+    .img-weather {
+        position: relative;
+    }
+
+    .weather-card {
+        position: absolute;
+        top: 12%;
+        left: 77%;
+    }
+
+    .io-card {
+        margin-bottom: 10rem;
+    }
+
+    .io-card-box {
+        max-width: 66rem;
+        padding: 3rem 14rem;
+        background: #4768FD;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+
+    .themes {
+        margin-bottom: 8rem;
+        position: relative;
+    }
+
+    .media {
+        margin: 0.8rem 0 3rem 0;
+    }
+
+    .media-body h4 {
+        margin-bottom: 1.2rem;
+        font-family: Arial;
+        font-size: 1.625rem;
+        letter-spacing: -0.1px;
+        color: #212124;
+    }
+
+    .media-body p {
+        font-family: Arial;
+        font-size: 1.125rem;
+        letter-spacing: -0.4px;
+        color: #212124;
+    }
+
+    .main-theme {
+        font-family: Arial;
+        font-size: 2rem;
+        color: #212124;
+    }
+
+    .bit1 {
+        position: absolute;
+        top: 80%;
+        left: 77%;
+    }
+
+    .join-us-card {
+        max-width: 40rem;
+        padding: 3rem;
+        background: #30E7B6;
+        font-family: Arial;
+        font-size: 1.625rem;
+        color: #000000;
+    }
+
+    .bitmap {
+        position: relative;
+        margin-bottom: 45rem;
+    }
+
+    .bit2 {
+        margin-top: 3rem;
+    }
+
+    .bit3 {
+        max-width: 35rem;
+        position: absolute;
+        top: 30%;
+        left: 31%;
+    }
+
+    .bit4 {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+
+    .bit5 {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-70%)
+    }
+
+    .bit6 {
+        position: absolute;
+        top: 100%;
+        left: 68%;
+    }
+
+    .bit7 {
+        position: absolute;
+        top: 133%;
+        left: 58%;
+    }
+
+    .bit8 {
+        position: absolute;
+        top: 136%;
+        left: 22%;
+    }
+
+    .bit9 {
+        position: absolute;
+        top: 93%;
+        left: 60.5%;
+    }
+
+    .card {
+        position: absolute;
+        top: 176%;
+        left: 51%;
+        width: 22rem;
+        border-radius: 0;
+        border: none;
+    }
+
+    .card-body {
+        background: #FDD22E;
+    }
+
+    .card-title {
+        padding: 1rem 1.5rem;
+        font-family: Arial;
+        font-size: 1.5rem;
+        color: #212124;
+    }
+
+    .card-link {
+        padding: 1rem 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: -0.246154px;
+        color: #212124;
+    }
+
+    .line {
+        margin: 0 0 1.5rem 1.5626rem;
+        border: 1.5px solid #212124;
+        width: 13rem;
+    }
+
+    .social-share {
+        margin-bottom: 15rem;
+    }
+
+    .cta {
+        margin-bottom: 12rem;
+    }
+
+    .title-cta li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+        color: #212124;
+    }
+
+    .detail-cta {
+        max-width: 42rem;
+        padding-top: 2rem;
+    }
+
+    .detail-cta h3 {
+        padding-bottom: 1rem;
+        font-family: Arial;
+        font-size: 2.375rem;
+        color: #212124;
+    }
+
+    .detail-cta a {
+        font-family: Arial;
+        font-size: 0.75rem;
+        color: #536DFE;
+    }
+
+    .keep-in {
+        max-width: 27rem;
+        padding-top: 2rem;
+        padding-bottom: 1.4375rem;
+        font-family: Arial;
+        font-size: 1.4375rem;
+        color: #000000;
+    }
+
+    footer {
+        margin-bottom: 4rem;
+    }
+
+    .coll {
+        padding: 0;
+    }
+
+    .gg-icon {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-link li a {
+        font-family: Arial;
+        font-size: 1.125rem;
+        color: #000000;
+    }
+
+    .footer-link li {
+        margin-right: 1.6rem;
+    }
+
+    .footer-icon li {
+        margin-left: 2rem;
+    }
 }
 
-.themes {
-    margin-bottom: 235px;
-}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background: #FFFFFF;
+    }
 
-.box-join {
-    max-width: 850px;
-    background: #30E7B6;
-}
+    .container {
+        padding: 0;
+    }
 
-.box-text-join {
-    padding: 50px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 53px;
-    color: #000000;
+    header {
+        padding-top: 1.375rem;
+        margin-bottom: 11.375rem;
+    }
+
+    .main-menu {
+        max-width: 99.125rem;
+        height: 2.5625rem;
+    }
+
+    .tagline {
+        margin-bottom: 10rem;
+    }
+
+    .timeline {
+        margin-bottom: 7rem;
+    }
+
+    .img-weather {
+        position: relative;
+    }
+
+    .weather-card {
+        position: absolute;
+        top: 12%;
+        left: 77%;
+    }
+
+    .io-card {
+        margin-bottom: 10rem;
+    }
+
+    .io-card-box {
+        max-width: 66rem;
+        padding: 3rem 14rem;
+        background: #4768FD;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+    }
+
+    .themes {
+        margin-bottom: 8rem;
+        position: relative;
+    }
+
+    .media {
+        margin: 0.8rem 0 3rem 0;
+    }
+
+    .media-body h4 {
+        margin-bottom: 1.2rem;
+        font-family: Arial;
+        font-size: 1.625rem;
+        letter-spacing: -0.1px;
+        color: #212124;
+    }
+
+    .media-body p {
+        font-family: Arial;
+        font-size: 1.125rem;
+        letter-spacing: -0.4px;
+        color: #212124;
+    }
+
+    .main-theme {
+        font-family: Arial;
+        font-size: 2rem;
+        color: #212124;
+    }
+
+    .bit1 {
+        position: absolute;
+        top: 80%;
+        left: 77%;
+    }
+
+    .join-us-card {
+        max-width: 40rem;
+        padding: 3rem;
+        background: #30E7B6;
+        font-family: Arial;
+        font-size: 1.625rem;
+        color: #000000;
+    }
+
+    .bitmap {
+        position: relative;
+        margin-bottom: 45rem;
+    }
+
+    .bit2 {
+        margin-top: 3rem;
+    }
+
+    .bit3 {
+        max-width: 35rem;
+        position: absolute;
+        top: 30%;
+        left: 31%;
+    }
+
+    .bit4 {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+
+    .bit5 {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-70%)
+    }
+
+    .bit6 {
+        position: absolute;
+        top: 100%;
+        left: 68%;
+    }
+
+    .bit7 {
+        position: absolute;
+        top: 133%;
+        left: 58%;
+    }
+
+    .bit8 {
+        position: absolute;
+        top: 136%;
+        left: 22%;
+    }
+
+    .bit9 {
+        position: absolute;
+        top: 93%;
+        left: 60.5%;
+    }
+
+    .card {
+        position: absolute;
+        top: 176%;
+        left: 51%;
+        width: 22rem;
+        border-radius: 0;
+        border: none;
+    }
+
+    .card-body {
+        background: #FDD22E;
+    }
+
+    .card-title {
+        padding: 1rem 1.5rem;
+        font-family: Arial;
+        font-size: 1.5rem;
+        color: #212124;
+    }
+
+    .card-link {
+        padding: 1rem 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: -0.246154px;
+        color: #212124;
+    }
+
+    .line {
+        margin: 0 0 1.5rem 1.5626rem;
+        border: 1.5px solid #212124;
+        width: 13rem;
+    }
+
+    .social-share {
+        margin-bottom: 15rem;
+    }
+
+    .cta {
+        margin-bottom: 12rem;
+    }
+
+    .title-cta li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+        color: #212124;
+    }
+
+    .detail-cta {
+        max-width: 42rem;
+        padding-top: 2rem;
+    }
+
+    .detail-cta h3 {
+        padding-bottom: 1rem;
+        font-family: Arial;
+        font-size: 2.375rem;
+        color: #212124;
+    }
+
+    .detail-cta a {
+        font-family: Arial;
+        font-size: 0.75rem;
+        color: #536DFE;
+    }
+
+    .keep-in {
+        max-width: 27rem;
+        padding-top: 2rem;
+        padding-bottom: 1.4375rem;
+        font-family: Arial;
+        font-size: 1.4375rem;
+        color: #000000;
+    }
+
+    footer {
+        margin-bottom: 4rem;
+    }
+
+    .coll {
+        padding: 0;
+    }
+
+    .gg-icon {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-link li a {
+        font-family: Arial;
+        font-size: 1.125rem;
+        color: #000000;
+    }
+
+    .footer-link li {
+        margin-right: 1.6rem;
+    }
+
+    .footer-icon li {
+        margin-left: 2rem;
+    }
 }
