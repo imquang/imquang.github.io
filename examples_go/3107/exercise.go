@@ -14,7 +14,7 @@ func rectangle(width, height int) (int, int) {
 // Tinh giai thua mot so nguyen
 func factorial(num int) int {
 	result := 1
-	
+
 	for i := 1; i <= num; i++ {
 		result = result * i
 	}
@@ -66,6 +66,36 @@ func perfectNumber(num int) {
 	}
 }
 
+// Kiem tra so ngay cua thang
+func checkMonth(month, year int) {
+	switch {
+	case month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12:
+		fmt.Println("Nam", year, "khong phai nam nhuan")
+		fmt.Println("Thang", month, "co 31 ngay")
+	case month == 4 || month == 6 || month == 9 || month == 11:
+		fmt.Println("Nam", year, "khong phai nam nhuan")
+		fmt.Println("Thang", month, "co 30 ngay")
+	case year%4 == 0 && month == 2:
+		fmt.Println("Nam", year, "la nam nhuan")
+		fmt.Println("Thang", month, "co 29 ngay")
+	default:
+		fmt.Println("Nam", year, "khong phai nam nhuan")
+		fmt.Println("Thang", month, "co 28 ngay")
+	}
+}
+
+// Dao nguoc mang
+func reverseArray() {
+	a := [...]int{1, 4, 6, 9, 23, 2, 7}
+	var b []int
+	for i := len(a) - 1; i >= 0; i-- {	// Cho i chay nguoc lai
+		b = append(b, a[i])
+	}
+	fmt.Println(a)
+	fmt.Println(b)
+}
+
+// Run first
 func main() {
 	// In ra ket qua bai 1 phan 1
 	area, perimeter := rectangle(5, 4)
@@ -84,4 +114,12 @@ func main() {
 
 	// In ra ket qua bai 3 phan 2
 	perfectNumber(6)
+	fmt.Println("")
+
+	// In ra ket qua bai 4 phan 2
+	checkMonth(2, 2020)
+	fmt.Println("")
+	
+	// In ra ket qua bai 1 phan 3
+	reverseArray()
 }
