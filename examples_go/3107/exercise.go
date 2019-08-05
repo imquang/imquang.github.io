@@ -44,26 +44,21 @@ func primeNumber(num int) {
 }
 
 // In ra tat ca so hoan hao nho hon 200
-func perfectNumber(num int) {
-	flag := true
-	sum := 0
-	for i := 1; i < num; i++ {
-		if num%i == 0 {
-			sum = sum + i
+func perfectNumber() {
+	var arr []int
+
+	for i := 1; i <= 200; i++ {
+		sum := 0
+		for j := 1; j < i; j++ {
+			if i%j == 0 {
+				sum = sum + j
+			}
+		}
+		if sum == i {
+			arr = append(arr, i)
 		}
 	}
-
-	if sum == num {
-		flag = true
-	} else {
-		flag = false
-	}
-
-	if flag == true {
-		fmt.Println("So hoan hao")
-	} else {
-		fmt.Println("So khong hoan hao")
-	}
+	fmt.Println("Cac so hoan hao nho hon 200 la:", arr)
 }
 
 // Kiem tra so ngay cua thang
@@ -88,11 +83,33 @@ func checkMonth(month, year int) {
 func reverseArray() {
 	a := [...]int{1, 4, 6, 9, 23, 2, 7}
 	var b []int
-	for i := len(a) - 1; i >= 0; i-- {	// Cho i chay nguoc lai
+	for i := len(a) - 1; i >= 0; i-- { // Cho i chay nguoc lai
 		b = append(b, a[i])
 	}
 	fmt.Println(a)
 	fmt.Println(b)
+}
+
+// Chen so vao mang
+func insertNumber() {
+	a := [...]int{1, 4, 6, 9, 23, 2, 7, 20, 50}
+	n := 5
+	m := 90
+	slice1 := a[0:n]
+	slice2 := a[n:7]
+	var new []int
+	new = append(new, slice1...)
+	new = append(new, m)
+	new = append(new, slice2...)
+	fmt.Println(new)
+}
+
+// In ra man hinh phan tu trung nhau va so lan xuat hien trong mang
+func printDuplicate() {
+	// a := [...]int{1, 4, 6, 9, 23, 2, 7, 4, 1, 2}
+	// for i := 0; i <= len(a); i++ {
+	// 	b := a[i]
+	// 	if
 }
 
 // Run first
@@ -101,25 +118,24 @@ func main() {
 	area, perimeter := rectangle(5, 4)
 	fmt.Println("Dien tich hinh ch nhat la:", area)
 	fmt.Println("Chu vi hinh ch nhat la:", perimeter)
-	fmt.Println("")
 
 	// In ra ket qua bai 1 phan 2
 	result := factorial(5)
-	fmt.Println("Gia thua cua so 3 la:", result)
-	fmt.Println("")
+	fmt.Println("Giai thua cua so 5 la:", result)
 
 	// In ra ket qua bai 2 phan 2
 	primeNumber(2)
-	fmt.Println("")
 
 	// In ra ket qua bai 3 phan 2
-	perfectNumber(6)
-	fmt.Println("")
+	perfectNumber()
 
 	// In ra ket qua bai 4 phan 2
 	checkMonth(2, 2020)
-	fmt.Println("")
-	
+
 	// In ra ket qua bai 1 phan 3
 	reverseArray()
+
+	insertNumber()
+
+	printDuplicate()
 }
