@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url("/assets/font/SF-Pro-Display-Regular.otf");
+    font-style: normal;
+}
+
+* {
+    font-family: 'SF Pro Display'
+}
+
+.clr {
+    margin: auto;
+    max-width: 77.25rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Style header */
+.site-header {
+    margin-bottom: 1.5625rem;
+    max-height: 5.375rem;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+}
+
+.main-header {
+    padding: 1.25rem 0;
+    background: #ffffff;
+}
+
+.navbar-brand {
+    margin: 0 !important;
+}
+
+.navbar-nav {
+    margin-left: 5.625rem;
+}
+
+.nav-item {
+    margin-right: 3.125rem;
+}
+
+.nav-link {
+    padding: 0.3125rem !important;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124 !important;
+}
+
+.search-icon {
+    margin-right: 1.5625rem;
+}
+
+.btn-login {
+    padding: 0.3125rem 0 0.3125rem 0.3125rem !important;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124 !important;
+}
+
+/* Style category */
+.category {
+    margin-bottom: 6.25rem;
+}
+
+.clr h5 {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.category .row {
+    margin: 0;
+    padding: 0;
+}
+
+.col-item-1 {
+    padding: 0 1.25rem 0 0;
+}
+
+.col-item-2 {
+    padding: 0 1.25rem 0 0;
+}
+
+.col-item-3 {
+    padding: 0 1.25rem 0 0;
+}
+
+.col-item-4 {
+    padding: 0;
+}
+
+.category-item {
+    max-width: 18.375rem;
+    max-height: 4.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.25rem;
+}
+
+.card-img {
+    border-radius: 0 !important;
+}
+
+.category-img {
+    max-height: 4.375rem;
+}
+
+.title-clr {
+    position: relative;
+}
+
+.category-title {
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #202124;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+/* Style most popular */
+.most-popular {
+    margin-bottom: 5rem;
+}
+
+.most-popular h5 {
+    margin-bottom: 0.9375rem;
+}
+
+.most-popular p {
+    margin-bottom: 1.25rem;
+}
+
+.most-popular .card-deck {
+    margin: 0 0 1.25rem 0;
+}
+
+.card-deck .card {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.25rem;
+}
+
+.item-popular-1 {
+    margin: 0 0.625rem 0 0 !important;
+}
+
+.item-popular-2 {
+    margin: 0 0.625rem !important;
+}
+
+.item-popular-3 {
+    margin: 0 0.625rem !important;
+}
+
+.item-popular-4 {
+    margin: 0 0 0 0.625rem !important;
+}
+
+.item-popular-1 .card-body,
+.item-popular-2 .card-body,
+.item-popular-3 .card-body,
+.item-popular-4 .card-body {
+    padding: 0.9375rem 1.25rem;
+}
+
+.item-popular-1 .card-body .card-title,
+.item-popular-2 .card-body .card-title,
+.item-popular-3 .card-body .card-title,
+.item-popular-4 .card-body .card-title {
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.mp-detail {
+    margin-bottom: 0.625rem !important;
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.mp-rating {
+    font-size: 0.75rem; 
+}
+
+.mp-number-star, .mp-icon {
+    color: #0052CC;
+}
+
+.mp-icon {
+    font-size: 0.625rem;
+}
+
+.mp-number-rating {
+    color: #666666;
+}
+
+.view-more a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124;
+    text-decoration: solid #202124 underline;
+}
+
+/* Style suggest */
+
+.suggest {
+    margin-bottom: 5rem;
+}
+
+.suggest .card-deck {
+    margin: 0 0 1.25rem 0;
+}
+
+.suggest-item-1 {
+    margin: 0 0.625rem 0 0 !important;
+}
+
+.suggest-item-2,
+.suggest-item-3,
+.suggest-item-4 {
+    margin: 0 0.625rem !important;
+}
+
+.suggest-item-5 {
+    margin: 0 0 0 0.625rem !important;
+}
+
+.suggest-place {
+    margin: auto;
+    padding-top: 13.0625rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Style live tour */
+.live-tour {
+    margin-bottom: 5rem;
+}
+
+.live-row-1, .live-row-2 {
+    margin: 0 0 1.25rem 0;
+}
+
+.live-item-1 {
+    margin: 0 0.625rem 0 0 !important;
+}
+
+.live-item-2, .live-item-3 {
+    margin: 0 0.625rem !important;
+}
+
+.live-item-4 {
+    margin: 0 0 0 0.625rem !important;
+}
+
+.lv-card-body {
+    padding: 0.9375rem 1.25rem;
+}
+
+.lv-title {
+    margin: 0 0 0.3125rem 0 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #202124 !important;
+}
+
+.lv-card-body p {
+    margin-bottom: 0 !important;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.lv-hightlight {
+    font-weight: bold;
+    color: #202124;
+}
+
+/* Style blog */
+.blog {
+    margin-bottom: 5rem;
+}
+
+.blog .card-deck {
+    margin: 0 0 1.25rem 0;
+}
+
+.blog-item-1,
+.blog-item-2,
+.blog-item-3 {
+    border: none !important;
+}
+
+.blog-item-1 {
+    margin: 0 0.625rem 0 0 !important;
+}
+
+.blog-item-2 {
+    margin: 0 0.625rem !important;
+}
+
+.blog-item-3 {
+    margin: 0 0 0 0.625rem !important;
+}
+
+.blog-detail {
+    padding: 0.9375rem 1.25rem;
+}
+
+.blog-tag {
+    margin-bottom: 0.3125rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0052CC;
+    text-transform: uppercase;
+}
+
+.blog-detail .card-title {
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.blog-user {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+/* Style footer */
+.footer-clr {
+    margin: auto;
+    max-width: 57.5rem;
+    padding-top: 1.3125rem;
+}
+
+.main-footer {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-logo {
+    margin-bottom: 0.9375rem;
+}
+
+.textwidget .footer-item {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+.footer-item {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124;
+}
+
+.footer-item a {
+    color: #202124;
+}
+
+.footer-item a:hover {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.footer-social-item {
+    float: left;
+}
+
+.widget-title {
+    margin-bottom: 0.9375rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-social-item {
+    padding-right: 1rem;
+}
+
+.footer-bottom {
+    margin: 2.5rem 0.9375rem 0;
+    padding: 1.125rem;
+    border-top: #B3B3B3 solid 1px;
+}
+
+#copyright {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #666666;
+}
