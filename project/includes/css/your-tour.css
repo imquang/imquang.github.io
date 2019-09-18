@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url("/assets/font/SF-Pro-Display-Regular.otf");
+    font-style: normal;
+}
+
+* {
+    font-family: 'SF Pro Display';
+}
+
+.clr {
+    margin: auto;
+    max-width: 77.25rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Style header */
+.site-header {
+    max-height: 5.375rem;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+}
+
+.main-header {
+    padding: 1.25rem 0;
+    background: #ffffff;
+}
+
+.navbar-brand {
+    margin: 0 !important;
+}
+
+.navbar-nav {
+    margin-left: 5.625rem;
+}
+
+.nav-item {
+    margin-right: 3.125rem;
+}
+
+.nav-link {
+    padding: 0.3125rem !important;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124 !important;
+}
+
+.search-icon {
+    margin-right: 1.5625rem;
+}
+
+.btn-login {
+    padding: 0.3125rem 0 0.3125rem 0.3125rem !important;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124 !important;
+}
+
+/* Style footer */
+.footer-clr {
+    margin: auto;
+    padding-top: 1.3125rem;
+    max-width: 57.5rem;
+}
+
+.main-footer {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-logo {
+    margin-bottom: 0.9375rem;
+}
+
+.textwidget .footer-item {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+.footer-item {
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #202124;
+}
+
+.footer-item a {
+    color: #202124;
+}
+
+.footer-item a:hover {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.footer-social-item {
+    float: left;
+}
+
+.widget-title {
+    margin-bottom: 0.9375rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-social-item {
+    padding-right: 1rem;
+}
+
+.footer-bottom {
+    margin: 2.5rem 0.9375rem 0;
+    padding: 1.125rem;
+    border-top: #B3B3B3 solid 1px;
+}
+
+#copyright {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+/* Style slide banner */
+.banner-slider-box .row {
+    margin: 0;
+}
+
+.banner-slider-box .row .col {
+    padding: 0 !important;
+}
