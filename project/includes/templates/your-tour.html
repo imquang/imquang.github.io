@@ -72,12 +72,12 @@
                 <div class="place-title-box">
                     <h2>Thành phố Hồ Chí Minh</h2>
                     <div class="place-location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Hồ Chí Minh, Việt Nam</span>
+                        <i class="fas fa-map-marker-alt place-location-icon"></i>
+                        <span id="text-location">Hồ Chí Minh, Việt Nam</span>
                     </div>
                     <div class="place-tag">
-                        <i class="fas fa-tag"></i>
-                        <span>Phong cảnh</span>
+                        <i class="fas fa-tag place-location-icon"></i>
+                        <span id="tag-location">Phong cảnh</span>
                     </div>
                 </div>
                 <div class="place-detail-box">
@@ -113,15 +113,15 @@
                         <span class="r-title">Đánh giá</span>
                         <span class="pl-star-rating">
                             <span class="pl-number-star">4.5</span>
-                            <i class="material-icons mp-icon">star</i>
+                            <i class="material-icons pl-icon">star</i>
                         </span>
                         <span class="pl-number-rating">(1200)</span>
                     </div>
                     <div class="rating-user">
                         <div class="media">
                             <img src="/project/assets/images/your-tour/avatar.png" class="mr-3" alt="Avatar">
-                            <div class="media-body">
-                                <h5 class="mt-0">Thanh</h5>
+                            <div class="media-body rmb">
+                                <h5 class="mt-0 username-rating">Thanh</h5>
                                 1 tháng
                             </div>
                         </div>
@@ -135,8 +135,8 @@
                     <div class="rating-user">
                         <div class="media">
                             <img src="/project/assets/images/your-tour/avatar.png" class="mr-3" alt="Avatar">
-                            <div class="media-body">
-                                <h5 class="mt-0">Thanh</h5>
+                            <div class="media-body rmb">
+                                <h5 class="mt-0 username-rating">Thanh</h5>
                                 1 tháng
                             </div>
                         </div>
@@ -150,8 +150,8 @@
                     <div class="rating-user">
                         <div class="media">
                             <img src="/project/assets/images/your-tour/avatar.png" class="mr-3" alt="Avatar">
-                            <div class="media-body">
-                                <h5 class="mt-0">Thanh</h5>
+                            <div class="media-body rmb">
+                                <h5 class="mt-0 username-rating">Thanh</h5>
                                 1 tháng
                             </div>
                         </div>
@@ -165,8 +165,8 @@
                     <div class="rating-user">
                         <div class="media">
                             <img src="/project/assets/images/your-tour/avatar.png" class="mr-3" alt="Avatar">
-                            <div class="media-body">
-                                <h5 class="mt-0">Thanh</h5>
+                            <div class="media-body rmb">
+                                <h5 class="mt-0 username-rating">Thanh</h5>
                                 1 tháng
                             </div>
                         </div>
@@ -180,8 +180,8 @@
                     <div class="rating-user">
                         <div class="media">
                             <img src="/project/assets/images/your-tour/avatar.png" class="mr-3" alt="Avatar">
-                            <div class="media-body">
-                                <h5 class="mt-0">Thanh</h5>
+                            <div class="media-body rmb">
+                                <h5 class="mt-0 username-rating">Thanh</h5>
                                 1 tháng
                             </div>
                         </div>
@@ -193,8 +193,8 @@
                         </div>
                     </div>
                     <div class="pagination">
-                        <a href="#">
-                            <i class="material-icons pagination-icons">keyboard_arrow_left</i>
+                        <a href="#" id="pagination-previous">
+                            <i class="material-icons pagination-icons">navigate_before</i>
                         </a>
                         <a href="#">1</a>
                         <a class="active" href="#">2</a>
@@ -202,8 +202,8 @@
                         <a href="#">4</a>
                         <a href="#">...</a>
                         <a href="#">9</a>
-                        <a href="#">
-                            <i class="material-icons pagination-icons">keyboard_arrow_right</i>
+                        <a href="#" id="pagination-next">
+                            <i class="material-icons pagination-icons">navigate_next</i>
                         </a>
                     </div>
                 </div>

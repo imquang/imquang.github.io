@@ -150,10 +150,105 @@ ul {
 }
 
 /* Style detail container */
+.place-title-box {
+    margin-bottom: 3.125rem;
+}
 
+.place-title-box h2 {
+    margin-bottom: 1rem;
+    font-size: 2.125rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.place-location {
+    margin-bottom: 0.9375rem;
+}
+
+.place-location-icon {
+    padding-right: 0.625rem;
+    font-size: 0.9375rem;
+}
+
+#text-location, #tag-location {
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.place-detail-1 h4 {
+    margin-bottom: 0.8125rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.place-detail-2 {
+    margin-bottom: 5rem;
+}
+
+.place-detail-2 p {
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.rating-title {
+    margin-bottom: 1.5625rem;
+}
+
+.r-title {
+    padding-right: 0.9375rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.pl-star-rating, .pl-number-rating {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.pl-number-star, .pl-icon {
+    color: #0052CC;
+}
+
+.pl-icon {
+    font-size: 0.625rem;
+}
+
+.pl-number-rating {
+    color: #666666;
+}
+
+/* Style rating user */
+.rating-user {
+    margin-bottom: 1.875rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.32)
+}
+
+.rating-user .media {
+    margin-bottom: 1.25rem;
+}
+
+.username-rating {
+    margin-bottom: 0.3125rem;
+    font-size: 1.125rem;
+    color: #202124;
+}
+
+.rmb {
+    font-size: 0.75rem;
+}
+
+.rate-text-box p {
+    margin-bottom: 1.875rem;
+    padding-right: 2.5rem;
+    font-size: 0.875rem;
+    color: #202124;
+}
 
 /* Style pagination */
 .pagination {
+    margin-bottom: 6.25rem;
     display: inline-block;
 }
   
@@ -173,6 +268,14 @@ ul {
 .pagination a:hover:not(.active) {
     background-color: #ddd;
     border-radius: 50%;
+}
+
+#pagination-previous {
+    padding-left: 0 !important;
+}
+
+#pagination-previous:hover, #pagination-next:hover {
+    background-color: #ffffff !important;
 }
 
 /* Style share button */
@@ -198,7 +301,19 @@ ul {
     text-transform: uppercase;
 }
 
+.share-button {
+    margin-bottom: 1.25rem;
+}
+
+.btn-share:hover, .btn-join:hover {
+    background-color:  !important;
+}
+
 /* Style location related */
+.location-related {
+    margin-bottom: 4.375rem;
+}
+
 .item-place-left .card-body .card-title,
 .item-place .card-body .card-title,
 .item-place-right .card-body .card-title {
