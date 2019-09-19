@@ -13,6 +13,12 @@
     max-width: 77.25rem;
 }
 
+.clr-2 {
+    margin: auto;
+    max-width: 69.375rem;
+}
+
+
 a:hover {
     text-decoration: none;
 }
@@ -131,10 +137,119 @@ ul {
 }
 
 /* Style slide banner */
+.banner-slider {
+    margin-bottom: 1.875rem;
+}
+
 .banner-slider-box .row {
     margin: 0;
 }
 
 .banner-slider-box .row .col {
     padding: 0 !important;
+}
+
+/* Style detail container */
+
+
+/* Style pagination */
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: #202124;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active, .pagination-icons {
+    background-color: #0747A6;
+    border-radius: 50%;
+    color: white;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Style share button */
+.btn-share, .share-icon {
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.btn-share {
+    border: 1px solid #0052CC;
+    border-radius: 0.25rem;
+}
+
+/* Style join button */
+.btn-join {
+    padding: 0.875rem 0;
+    width: 21.875rem;
+    background-color: #0747A6;
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Style location related */
+.item-place-left .card-body .card-title,
+.item-place .card-body .card-title,
+.item-place-right .card-body .card-title {
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.location-related-box .card-deck .card {
+    border: none;
+}
+
+.location-related-box .card-deck .card .card-body {
+    padding: 0.9375rem 0;
+}
+
+.item-place-left {
+    margin: 0 0.625rem 0 0 !important;
+}
+
+.item-place {
+    margin: 0 0.625rem !important;
+}
+
+.item-place-right {
+    margin: 0 0.625rem !important;
+}
+
+.location-related-box .card-deck {
+    margin: 0 0 0.3125rem 0;
+}
+
+.mp-detail {
+    margin-bottom: 0.625rem !important;
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.mp-rating {
+    font-size: 0.75rem; 
+}
+
+.mp-number-star, .mp-icon {
+    color: #0052CC;
+}
+
+.mp-icon {
+    font-size: 0.625rem;
+}
+
+.mp-number-rating {
+    color: #666666;
 }
