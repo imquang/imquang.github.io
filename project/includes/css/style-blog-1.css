@@ -135,6 +135,7 @@ ul {
 /* Style banner blog */
 .banner-blog {
     margin-top: 5.375rem;
+    margin-bottom: 3.125rem;
 }
 
 .banner-blog-box {
@@ -185,4 +186,90 @@ ul {
     font-size: 0.875rem;
     font-weight: 500;
     color: #666666;
+}
+
+/* Style main content */
+.content-clr {
+    max-width: 69.375rem;
+    margin: auto;
+}
+
+.content-box {
+    margin-bottom: 1.25rem;
+}
+
+/* Style share button */
+.share-icon {
+    margin-bottom: 1.25rem;
+}
+
+/* Style text content */
+.subhead::first-letter {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #202124;
+    line-height: 0;
+}
+
+.subhead, .text {
+    margin-bottom: 1.875rem;
+    font-size: 0.875rem;
+    color: #202124;
+}
+
+.img-blog-1 {
+    margin-bottom: 1.875rem;
+}
+
+/* Style blog related */
+.blog-related h5 {
+    margin-bottom: 1.25rem;
+    color: #1A1A1A;
+}
+
+.blog-related-item {
+    margin: 0 0.625rem !important;
+    border: none !important;
+}
+
+.bo-left {
+    margin-left: 0 !important;
+}
+
+.bo-right {
+    margin-right: 0 !important;
+}
+
+.blog-related .card-deck {
+    margin: 0 0 1.25rem 0;
+}
+
+.blog-related {
+    margin-bottom: 6.25rem;
+}
+
+.blog-detail {
+    padding: 0.9375rem 1.25rem;
+}
+
+.blog-tag {
+    margin-bottom: 0.3125rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0052CC;
+    text-transform: uppercase;
+}
+
+.blog-detail .card-title {
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+.blog-user {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #666666;
+    text-transform: uppercase;
 }
